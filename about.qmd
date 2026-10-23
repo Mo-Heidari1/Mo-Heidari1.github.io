@@ -1,16 +1,10 @@
 ---
-title: "CV"
+title: "About"
+aliases:
+  - cv.html
 ---
 
-::: {.cv-meta}
-Systematic Trader and Macro Analyst · London, UK · [mo.heidari24@gmail.com](mailto:mo.heidari24@gmail.com)
-:::
-
-[Download CV (PDF)](files/Mo_Heidari_CV.pdf){.btn .btn-primary}
-
-## Summary
-
-MSc Financial Economics (Distinction) graduate with equity research experience in fundamental analysis, DCF and comparable company valuation. Builds rule-based MQL4/MQL5 trading tools and trades US index markets in the New York session. Runs a live Python macro dashboard of US yields and ISM data.
+I'm a systematic trader and macro analyst based in London. I trade US index markets during the New York session as part of a small team, working to a rule-based process that I designed, documented and backtested. Alongside trading, I build and maintain a public macro dashboard that tracks the US Treasury yield curve and ISM data. I hold an MSc in Financial Economics (Distinction) from City, University of London.
 
 ## Experience
 
@@ -45,21 +39,6 @@ Fajr Energy Company
 - Analysed reliability and operational risk data for industrial systems, identifying patterns relevant to equipment lifecycle management.
 - Reviewed technical documentation and maintenance records, reaching defensible conclusions from incomplete real-world data.
 
-## Selected projects
-
-### Equity Valuation: ExxonMobil and HSBC [Oct 2024 – Nov 2024]{.cv-dates}
-
-- Carried out full fundamental analysis of two large-cap companies from different sectors, sourcing financial statements, peer data and market pricing through Bloomberg Terminal.
-- Built DCF and comparable company models in Excel with clearly stated assumptions and sensitivity testing, factoring in the energy transition (ExxonMobil) and the interest rate environment (HSBC).
-- Issued an investment recommendation for each company based on the valuation work.
-
-### Macro Dashboard [Nov 2024 – Present]{.cv-dates}
-
-Python, Streamlit
-
-- Built and maintain a public macro dashboard that currently shows the US Treasury yield curve and ISM Manufacturing signals, with further modules in development. See [Projects](projects.qmd).
-- Validated figures against official sources (FRED, Treasury.gov, ISM releases) and covered the code with automated tests.
-
 ## Education
 
 ### MSc Financial Economics (Distinction) [Sep 2024 – Sep 2025]{.cv-dates}
@@ -75,15 +54,14 @@ Amirkabir University of Technology
 
 - Strong quantitative and analytical foundation, with applied modelling and data interpretation skills transferable to finance.
 
-## Skills
+## Skills & certifications
 
 - **Equity research:** fundamental company and sector analysis, financial statements and peer data, DCF and comparable company valuation, sensitivity testing, earnings monitoring, written investment reports and recommendations
 - **Trading:** systematic strategy design, rule-based execution, backtesting, risk and drawdown control, trade record keeping, US index markets
 - **Macro and research:** US Treasury yield curve, investment-grade and high-yield credit spreads, ISM/PMI, CPI, central bank policy
 - **Programming and data:** Python (pandas, NumPy, matplotlib, Streamlit), MQL4/MQL5, VBA, MATLAB, STATA, data validation, automated testing
 - **Platforms and tools:** Bloomberg Terminal, MetaTrader 5, NinjaTrader, Quantower, Excel (advanced modelling, pivot tables, macro-enabled workbooks), Word, PowerPoint
-
-## Certifications and languages
-
 - **Certifications:** CFA Level 1 Candidate (sitting February 2027), Bloomberg Market Concepts, Bloomberg Spreadsheet Analysis
 - **Languages:** Persian (native), English (fluent)
+
+A CV tailored to a specific role is available on [request](mailto:mo.heidari24@gmail.com).

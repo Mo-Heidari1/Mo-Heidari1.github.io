@@ -14,53 +14,25 @@
     "text": "Python, Streamlit · Nov 2024 – Present\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "Systematic Trader and Macro Analyst · London, UK · mo.heidari24@gmail.com\nDownload CV (PDF)"
+    "objectID": "projects.html#research-us-jobs-data-and-european-carbon-prices",
+    "href": "projects.html#research-us-jobs-data-and-european-carbon-prices",
+    "title": "Projects",
+    "section": "Research: US Jobs Data and European Carbon Prices",
+    "text": "Research: US Jobs Data and European Carbon Prices\nPython, Excel · October 2026\nAn exploratory study of whether US employment and industrial activity help explain changes in EU Allowance (EUA) carbon prices, using monthly data from 2013 to mid-2026. It tests monthly relationships; it does not test immediate reactions to jobs announcements.\nTests of total, manufacturing, and mining and logging employment found no consistent relationship with EUA returns, and employment did not consistently add information beyond industrial production measures. One exploratory pattern linked unusual months in US mining, materials and capacity-use data with EUA returns five months later. It was found after trying many alternatives, received only weak support in an earlier period and showed no reliable forecasting ability, so I treat it as a hypothesis rather than a signal.\nMain limitations: the US data include later revisions, EUA prices are auction prices rather than executable futures prices, and many indicators and time gaps were tried on limited samples. The natural next step is an announcement-day study using market expectations and first-release data.\nSources: ICAP Allowance Price Explorer; US Bureau of Labor Statistics via FRED; Federal Reserve G.17 release; ISM Manufacturing Report on Business."
   },
   {
-    "objectID": "cv.html#summary",
-    "href": "cv.html#summary",
-    "title": "CV",
-    "section": "Summary",
-    "text": "Summary\nMSc Financial Economics (Distinction) graduate with equity research experience in fundamental analysis, DCF and comparable company valuation. Builds rule-based MQL4/MQL5 trading tools and trades US index markets in the New York session. Runs a live Python macro dashboard of US yields and ISM data."
+    "objectID": "projects.html#equity-valuation-exxonmobil-and-hsbc",
+    "href": "projects.html#equity-valuation-exxonmobil-and-hsbc",
+    "title": "Projects",
+    "section": "Equity Valuation: ExxonMobil and HSBC",
+    "text": "Equity Valuation: ExxonMobil and HSBC\nExcel, Bloomberg Terminal · Oct 2024 – Nov 2024\nA full fundamental analysis of two large-cap companies from different sectors, using financial statements, peer data and market pricing sourced through Bloomberg Terminal.\nI built DCF and comparable company models in Excel with clearly stated assumptions and sensitivity testing, factoring in the energy transition for ExxonMobil and the interest rate environment for HSBC. The work concluded with an investment recommendation for each company."
   },
   {
-    "objectID": "cv.html#experience",
-    "href": "cv.html#experience",
-    "title": "CV",
-    "section": "Experience",
-    "text": "Experience\n\nIndependent Trader Oct 2024 – Present\nSelf-employed, small trading team\n\nTrade US index markets, primarily the Dow Jones, during the New York session as part of a small team working to a shared written rulebook.\nDesigned and documented a rule-based intraday trading framework (in development since 2023) and tested it through backtesting.\nBuilt supporting MQL4/MQL5 tools and data-quality checks for the framework.\nCoordinate daily market preparation and review, and keep structured records of decisions and outcomes. The strategy, rules and tools were built through self-directed study.\n\n\n\nSales Advisor (Part-time) Jul 2026 – Present\nARKET, London\n\nWork across shop floor, tills, stockroom and deliveries in a busy central London store.\n\n\n\nEquity Analyst Intern Jun 2023 – Sep 2023\nFarabi Financial Group\n\nConducted fundamental equity research across oil and gas, banking and financial institutions, supporting valuation work and buy, sell and hold recommendations.\nBuilt DCF and comparable company models in Excel and wrote investment reports, presenting findings to senior analysts and portfolio managers.\nScreened, retrieved and validated company and market data on Bloomberg Terminal, and monitored earnings releases, central bank policy, CPI, PMI and yield curve movements.\nAutomated recurring data extraction and screening tasks in Python, reducing manual work and improving the consistency of research inputs.\n\n\n\nEngineering Intern Oct 2022 – Nov 2022\nFajr Energy Company\n\nAnalysed reliability and operational risk data for industrial systems, identifying patterns relevant to equipment lifecycle management.\nReviewed technical documentation and maintenance records, reaching defensible conclusions from incomplete real-world data."
-  },
-  {
-    "objectID": "cv.html#selected-projects",
-    "href": "cv.html#selected-projects",
-    "title": "CV",
-    "section": "Selected projects",
-    "text": "Selected projects\n\nEquity Valuation: ExxonMobil and HSBC Oct 2024 – Nov 2024\n\nCarried out full fundamental analysis of two large-cap companies from different sectors, sourcing financial statements, peer data and market pricing through Bloomberg Terminal.\nBuilt DCF and comparable company models in Excel with clearly stated assumptions and sensitivity testing, factoring in the energy transition (ExxonMobil) and the interest rate environment (HSBC).\nIssued an investment recommendation for each company based on the valuation work.\n\n\n\nMacro Dashboard Nov 2024 – Present\nPython, Streamlit\n\nBuilt and maintain a public macro dashboard that currently shows the US Treasury yield curve and ISM Manufacturing signals, with further modules in development. See Projects.\nValidated figures against official sources (FRED, Treasury.gov, ISM releases) and covered the code with automated tests."
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "CV",
-    "section": "Education",
-    "text": "Education\n\nMSc Financial Economics (Distinction) Sep 2024 – Sep 2025\nCity, University of London\n\nThesis: Momentum in Financial Markets. Time-series and cross-sectional momentum across equities, commodities, FX and bonds, tested in Python with regression and hypothesis testing.\nModules: Asset Pricing, Econometrics, Derivatives, Portfolio Theory, Macroeconomics.\n\n\n\nBSc Mechanical Engineering Sep 2019 – Oct 2023\nAmirkabir University of Technology\n\nStrong quantitative and analytical foundation, with applied modelling and data interpretation skills transferable to finance."
-  },
-  {
-    "objectID": "cv.html#skills",
-    "href": "cv.html#skills",
-    "title": "CV",
-    "section": "Skills",
-    "text": "Skills\n\nEquity research: fundamental company and sector analysis, financial statements and peer data, DCF and comparable company valuation, sensitivity testing, earnings monitoring, written investment reports and recommendations\nTrading: systematic strategy design, rule-based execution, backtesting, risk and drawdown control, trade record keeping, US index markets\nMacro and research: US Treasury yield curve, investment-grade and high-yield credit spreads, ISM/PMI, CPI, central bank policy\nProgramming and data: Python (pandas, NumPy, matplotlib, Streamlit), MQL4/MQL5, VBA, MATLAB, STATA, data validation, automated testing\nPlatforms and tools: Bloomberg Terminal, MetaTrader 5, NinjaTrader, Quantower, Excel (advanced modelling, pivot tables, macro-enabled workbooks), Word, PowerPoint"
-  },
-  {
-    "objectID": "cv.html#certifications-and-languages",
-    "href": "cv.html#certifications-and-languages",
-    "title": "CV",
-    "section": "Certifications and languages",
-    "text": "Certifications and languages\n\nCertifications: CFA Level 1 Candidate (sitting February 2027), Bloomberg Market Concepts, Bloomberg Spreadsheet Analysis\nLanguages: Persian (native), English (fluent)"
+    "objectID": "projects.html#msc-thesis-momentum-in-financial-markets",
+    "href": "projects.html#msc-thesis-momentum-in-financial-markets",
+    "title": "Projects",
+    "section": "MSc Thesis: Momentum in Financial Markets",
+    "text": "MSc Thesis: Momentum in Financial Markets\nPython · MSc Financial Economics, City, University of London · Sep 2024 – Sep 2025\nA study of time-series and cross-sectional momentum across equities, commodities, FX and bonds, tested in Python with regression and hypothesis testing."
   },
   {
     "objectID": "contact.html",
@@ -70,10 +42,38 @@
     "text": "Email: mo.heidari24@gmail.com\nLinkedIn: linkedin.com/in/mo-heidari-967801240\nGitHub: github.com/Mo-Heidari1\nLocation: London, UK"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a systematic trader and macro analyst based in London. I trade US index markets during the New York session as part of a small team, working to a rule-based process that I designed, documented and backtested. Alongside trading, I build and maintain a public macro dashboard that tracks the US Treasury yield curve and ISM data. I hold an MSc in Financial Economics (Distinction) from City, University of London."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n\nIndependent Trader Oct 2024 – Present\nSelf-employed, small trading team\n\nTrade US index markets, primarily the Dow Jones, during the New York session as part of a small team working to a shared written rulebook.\nDesigned and documented a rule-based intraday trading framework (in development since 2023) and tested it through backtesting.\nBuilt supporting MQL4/MQL5 tools and data-quality checks for the framework.\nCoordinate daily market preparation and review, and keep structured records of decisions and outcomes. The strategy, rules and tools were built through self-directed study.\n\n\n\nSales Advisor (Part-time) Jul 2026 – Present\nARKET, London\n\nWork across shop floor, tills, stockroom and deliveries in a busy central London store.\n\n\n\nEquity Analyst Intern Jun 2023 – Sep 2023\nFarabi Financial Group\n\nConducted fundamental equity research across oil and gas, banking and financial institutions, supporting valuation work and buy, sell and hold recommendations.\nBuilt DCF and comparable company models in Excel and wrote investment reports, presenting findings to senior analysts and portfolio managers.\nScreened, retrieved and validated company and market data on Bloomberg Terminal, and monitored earnings releases, central bank policy, CPI, PMI and yield curve movements.\nAutomated recurring data extraction and screening tasks in Python, reducing manual work and improving the consistency of research inputs.\n\n\n\nEngineering Intern Oct 2022 – Nov 2022\nFajr Energy Company\n\nAnalysed reliability and operational risk data for industrial systems, identifying patterns relevant to equipment lifecycle management.\nReviewed technical documentation and maintenance records, reaching defensible conclusions from incomplete real-world data."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nMSc Financial Economics (Distinction) Sep 2024 – Sep 2025\nCity, University of London\n\nThesis: Momentum in Financial Markets. Time-series and cross-sectional momentum across equities, commodities, FX and bonds, tested in Python with regression and hypothesis testing.\nModules: Asset Pricing, Econometrics, Derivatives, Portfolio Theory, Macroeconomics.\n\n\n\nBSc Mechanical Engineering Sep 2019 – Oct 2023\nAmirkabir University of Technology\n\nStrong quantitative and analytical foundation, with applied modelling and data interpretation skills transferable to finance."
+  },
+  {
+    "objectID": "about.html#skills-certifications",
+    "href": "about.html#skills-certifications",
+    "title": "About",
+    "section": "Skills & certifications",
+    "text": "Skills & certifications\n\nEquity research: fundamental company and sector analysis, financial statements and peer data, DCF and comparable company valuation, sensitivity testing, earnings monitoring, written investment reports and recommendations\nTrading: systematic strategy design, rule-based execution, backtesting, risk and drawdown control, trade record keeping, US index markets\nMacro and research: US Treasury yield curve, investment-grade and high-yield credit spreads, ISM/PMI, CPI, central bank policy\nProgramming and data: Python (pandas, NumPy, matplotlib, Streamlit), MQL4/MQL5, VBA, MATLAB, STATA, data validation, automated testing\nPlatforms and tools: Bloomberg Terminal, MetaTrader 5, NinjaTrader, Quantower, Excel (advanced modelling, pivot tables, macro-enabled workbooks), Word, PowerPoint\nCertifications: CFA Level 1 Candidate (sitting February 2027), Bloomberg Market Concepts, Bloomberg Spreadsheet Analysis\nLanguages: Persian (native), English (fluent)\n\nA CV tailored to a specific role is available on request."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mo Heidari",
     "section": "",
-    "text": "I’m Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.\nView my CV See my projects"
+    "text": "I’m Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.\nAbout me See my projects"
   }
 ]
