@@ -7,15 +7,23 @@ project:
   resources:
     - CNAME
     - .nojekyll
+    - images/
 
 website:
   title: "Mo Heidari"
   site-url: https://moheidari.com
   description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+  image: images/mo-heidari-portrait.jpg
+  image-alt: "Portrait of Mo Heidari"
   open-graph:
     description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+    image: images/mo-heidari-portrait.jpg
+    image-alt: "Portrait of Mo Heidari"
   twitter-card:
     description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+    image: images/mo-heidari-portrait.jpg
+    image-alt: "Portrait of Mo Heidari"
+    card-style: summary
   navbar:
     left:
       - href: index.qmd
@@ -32,9 +40,9 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
-    css: styles.css
+      light: [default, theme/common.scss, theme/light.scss]
+      dark: [default, theme/common.scss, theme/dark.scss]
+    respect-user-color-scheme: true
     toc: false
     include-in-header:
       text: '<meta name="description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">'

@@ -2,9 +2,14 @@
 title: "About"
 aliases:
   - cv.html
+body-classes: page-about
 ---
 
+::: {.about-intro}
+<img src="images/mo-heidari-graduation.jpg" alt="Mo Heidari at graduation" width="200" height="267" class="about-photo">
+
 I'm a systematic trader and macro analyst based in London. I trade US index markets during the New York session as part of a small team, working to a rule-based process that I designed, documented and backtested. Alongside trading, I build and maintain a public macro dashboard that tracks the US Treasury yield curve and ISM data. I hold an MSc in Financial Economics (Distinction) from City, University of London.
+:::
 
 ## Experience
 

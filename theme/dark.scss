@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+// Dark mode: deep navy page, raised navy surfaces, soft steel-blue links and
+// a lighter brass accent. All text pairs checked against WCAG AA (4.5:1).
+$body-bg: #0F1724;
+$body-color: #E3E7ED;
+$headings-color: #F2F4F7;
+$primary: #9DC1EE;
+$link-color: #9DC1EE;
+$text-muted: #A6B0BF;
+$border-color: #2A3A52;
+
+$navbar-bg: #0A111C;
+$navbar-fg: #D7DEE8;
+$navbar-hl: #FFFFFF;
+$footer-bg: #0B121D;
+$footer-fg: #A6B0BF;
+
+/*-- scss:rules --*/
+
+:root {
+  --mh-bg: #0F1724;
+  --mh-surface: #162236;
+  --mh-heading: #F2F4F7;
+  --mh-muted: #A6B0BF;
+  --mh-accent: #D2B06E;
+  --mh-rule: #2A3A52;
+  --mh-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 8px 22px rgba(0, 0, 0, 0.35);
+}
