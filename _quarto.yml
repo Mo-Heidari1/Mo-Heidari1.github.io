@@ -12,15 +12,15 @@ project:
 website:
   title: "Mo Heidari"
   site-url: https://moheidari.com
-  description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+  description: "Systematic trader and macro analyst based in London. Experience, projects and contact details."
   image: images/mo-heidari-portrait.jpg
   image-alt: "Portrait of Mo Heidari"
   open-graph:
-    description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+    description: "Systematic trader and macro analyst based in London. Experience, projects and contact details."
     image: images/mo-heidari-portrait.jpg
     image-alt: "Portrait of Mo Heidari"
   twitter-card:
-    description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+    description: "Systematic trader and macro analyst based in London. Experience, projects and contact details."
     image: images/mo-heidari-portrait.jpg
     image-alt: "Portrait of Mo Heidari"
     card-style: summary
@@ -45,4 +45,4 @@ format:
     respect-user-color-scheme: true
     toc: false
     include-in-header:
-      text: '<meta name="description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">'
+      text: '<meta name="description" content="Systematic trader and macro analyst based in London. Experience, projects and contact details.">'
