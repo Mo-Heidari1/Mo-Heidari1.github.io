@@ -1,0 +1,13 @@
+---
+title: "Projects"
+---
+
+## Macro Dashboard
+
+*Python, Streamlit · Nov 2024 – Present*
+
+A public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.
+
+The dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.
+
+[Live app](https://mo-macro-dashboard.streamlit.app){.btn .btn-primary} [Source on GitHub](https://github.com/Mo-Heidari1/macro-dashboard){.btn .btn-outline-primary}

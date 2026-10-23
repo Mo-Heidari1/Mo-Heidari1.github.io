@@ -1,0 +1,8 @@
+---
+title: "Mo Heidari"
+subtitle: "Systematic Trader and Macro Analyst · London"
+---
+
+I'm Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.
+
+[View my CV](cv.qmd){.btn .btn-primary} [See my projects](projects.qmd){.btn .btn-outline-primary}
