@@ -1,0 +1,16 @@
+Mo_Heidari_CV.docx
+.env
+*.mq4
+*.mq5
+*.ex4
+*.ex5
+.quarto/
+_freeze/
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+
+/.quarto/
+**/*.quarto_ipynb
+.claude/

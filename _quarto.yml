@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!research.qmd"
+  resources:
+    - CNAME
+    - .nojekyll
+    - files/Mo_Heidari_CV.pdf
+
+website:
+  title: "Mo Heidari"
+  site-url: https://moheidari.com
+  description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+  open-graph:
+    description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+  twitter-card:
+    description: "Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: cv.qmd
+        text: CV
+      - href: projects.qmd
+        text: Projects
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    center: "© 2026 Mo Heidari"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: false
+    include-in-header:
+      text: '<meta name="description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">'
