@@ -1,8 +1,13 @@
 ---
 title: "Contact"
+body-classes: page-contact
 ---
 
-- **Email:** [mo.heidari24@gmail.com](mailto:mo.heidari24@gmail.com)
-- **LinkedIn:** [linkedin.com/in/mo-heidari-967801240](https://www.linkedin.com/in/mo-heidari-967801240)
-- **GitHub:** [github.com/Mo-Heidari1](https://github.com/Mo-Heidari1)
-- **Location:** London, UK
+I'm a systematic trader and macro analyst based in London, and I'm looking for trading and finance roles in the UK. Email is the best way to reach me. I'm happy to talk about macro and rates, systematic process, and my research.
+
+::: {.contact-card}
+- <i class="bi bi-envelope" aria-hidden="true"></i> **Email:** [mo.heidari24@gmail.com](mailto:mo.heidari24@gmail.com)
+- <i class="bi bi-linkedin" aria-hidden="true"></i> **LinkedIn:** [linkedin.com/in/mo-heidari-967801240](https://www.linkedin.com/in/mo-heidari-967801240)
+- <i class="bi bi-github" aria-hidden="true"></i> **GitHub:** [github.com/Mo-Heidari1](https://github.com/Mo-Heidari1)
+- <i class="bi bi-geo-alt" aria-hidden="true"></i> **Location:** London, UK
+:::

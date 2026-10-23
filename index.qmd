@@ -1,8 +1,38 @@
 ---
 title: "Mo Heidari"
-subtitle: "Systematic Trader and Macro Analyst · London"
+body-classes: page-home
 ---
+
+::: {.hero}
+<img src="images/mo-heidari-portrait.jpg" alt="Portrait of Mo Heidari" width="220" height="220" class="hero-portrait">
+
+::: {.hero-text}
+<h1 class="hero-name">Mo Heidari</h1>
+
+<p class="hero-subtitle">Systematic Trader and Macro Analyst · London</p>
 
 I'm Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.
 
 [About me](about.qmd){.btn .btn-primary} [See my projects](projects.qmd){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.highlights}
+::: {.highlight}
+<h2 class="highlight-title">Systematic trading</h2>
+
+US index markets, traded with a rule-based process.
+:::
+
+::: {.highlight}
+<h2 class="highlight-title">Macro analysis</h2>
+
+Following the US economic cycle through Treasury yields, ISM surveys and other macro data.
+:::
+
+::: {.highlight}
+<h2 class="highlight-title">Public macro dashboard</h2>
+
+A public dashboard that tracks the US macro picture as new data is released.
+:::
+:::

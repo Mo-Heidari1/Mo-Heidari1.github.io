@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2f97b74db77226daf52f6f48ecac5172.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c33b505d0569b888a3d7645af85a9756.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2f97b74db77226daf52f6f48ecac5172.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,16 +80,19 @@ ul.task-list li input[type="checkbox"] {
 <meta name="description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">
 
 
-<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="About – Mo Heidari">
 <meta property="og:description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">
+<meta property="og:image" content="https://moheidari.com/images/mo-heidari-portrait.jpg">
 <meta property="og:site_name" content="Mo Heidari">
+<meta property="og:image:alt" content="Portrait of Mo Heidari">
 <meta name="twitter:title" content="About – Mo Heidari">
 <meta name="twitter:description" content="Mo Heidari, systematic trader and macro analyst based in London. CV, projects and macro research.">
+<meta name="twitter:image" content="https://moheidari.com/images/mo-heidari-portrait.jpg">
+<meta name="twitter:image:alt" content="Portrait of Mo Heidari">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed page-about fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -232,7 +235,8 @@ ul.task-list li input[type="checkbox"] {
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -245,6 +249,14 @@ ul.task-list li input[type="checkbox"] {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -320,7 +332,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="about-intro">
+<p><img src="images/mo-heidari-graduation.jpg" alt="Mo Heidari at graduation" width="200" height="267" class="about-photo"></p>
 <p>I’m a systematic trader and macro analyst based in London. I trade US index markets during the New York session as part of a small team, working to a rule-based process that I designed, documented and backtested. Alongside trading, I build and maintain a public macro dashboard that tracks the US Treasury yield curve and ISM data. I hold an MSc in Financial Economics (Distinction) from City, University of London.</p>
+</div>
 <section id="experience" class="level2">
 <h2 class="anchored" data-anchor-id="experience">Experience</h2>
 <section id="independent-trader-oct-2024-present" class="level3">
