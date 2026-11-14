@@ -1,45 +1,52 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "projects/us30-breakout.html",
+    "href": "projects/us30-breakout.html",
+    "title": "US30 Intraday Breakout: Research Record",
     "section": "",
-    "text": "Python, Streamlit · Nov 2024 – Present\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
+    "text": "Python, MQL5 · Retired 14 Nov 2026 · All projects\nResearch only, not investment advice. AI-assisted analysis."
   },
   {
-    "objectID": "projects.html#macro-dashboard",
-    "href": "projects.html#macro-dashboard",
-    "title": "Projects",
+    "objectID": "projects/us30-breakout.html#result-retired-after-a-clear-no",
+    "href": "projects/us30-breakout.html#result-retired-after-a-clear-no",
+    "title": "US30 Intraday Breakout: Research Record",
+    "section": "Result: retired after a clear “no”",
+    "text": "Result: retired after a clear “no”\nThe system lost money after costs in both independent test periods, so I retired it. No real money will be traded on it.\nThat is the job of a research process: to catch a strategy that does not work before capital is at risk. Over 7.4 years of 1-minute data (Jan 2019 – Nov 2026, 1,982 sessions, 7,645 trades), the signal’s edge before costs was about 0.01 R per trade, roughly a third of what the spread and slippage cost. No realistic cost structure closes that gap."
+  },
+  {
+    "objectID": "projects/us30-breakout.html#the-question-and-the-system",
+    "href": "projects/us30-breakout.html#the-question-and-the-system",
+    "title": "US30 Intraday Breakout: Research Record",
+    "section": "The question and the system",
+    "text": "The question and the system\nAs a systematic trader, I wanted to know whether a simple breakout rule on the Dow Jones (US30) can make money in the first two hours after the New York open.\nThe system reads 1-minute bars. When a candle of a defined shape closes beyond the two candles before it, on the right side of a moving-average trend filter, it places a stop order to trade in the direction of the break, with a fixed profit target and a stop behind the recent candles. It holds one position at a time, reverses on an opposite signal and closes out at a fixed time each day. The full rules are in the repository."
+  },
+  {
+    "objectID": "projects/us30-breakout.html#how-it-was-tested",
+    "href": "projects/us30-breakout.html#how-it-was-tested",
+    "title": "US30 Intraday Breakout: Research Record",
+    "section": "How it was tested",
+    "text": "How it was tested\n\nPre-registration. Rules and pass bars were written down before any result was computed.\nTwo independent periods. 2019 – May 2023 and Jul 2023 – Nov 2026. The second period stayed untouched until a rule passed development, and a rule had to hold on data not used to build it.\nCosts first. Every result is judged after spread and slippage, about 3 points per trade. To pass, a rule had to be positive after costs, positive in most half-year blocks and significant at p &lt; 0.05.\nSearch-adjusted statistics. Day-level bootstrap tests, with p-values adjusted wherever many variants were searched.\nVerified code. The Python simulator matched the MQL5 Expert Advisor trade for trade: 3,612 of 3,612 trades on 2019–22."
+  },
+  {
+    "objectID": "projects/us30-breakout.html#results",
+    "href": "projects/us30-breakout.html#results",
+    "title": "US30 Intraday Breakout: Research Record",
+    "section": "Results",
+    "text": "Results\nR is profit in units of the 1% risk per trade. Figures in brackets apply the slippage measured in MT5 real-tick tests.\n\n\n\n\nVersion\n2019 – May 2023\nJul 2023 – Nov 2026\n\n\n\n\nBase system\n−60.8 R (−121.6)\n−45.5 R (−94.4)\n\n\n+ EMA-cross day rule\n−66.1 R (−98.9)\n−16.6 R (−41.0)\n\n\n+ EMA rule + 3 wins / 2 losses\n−47.2 R (−74.3)\n−18.0 R (−37.3)\n\n\n\n\nThe day rule shows the trap. It looked useful on 2023–26, where the trades it blocked lost 29 R, but on 2019–23 the same rule blocked trades that made 5.3 R. About 260 variants were tested in total, from parameters and day filters to an ML regime model and two pre-registered ideas from the academic literature. All were rejected.\nWhy it fails, in short: the signal is thin and costs decide the sign. A trade costs about 3 points in spread and slippage, while breakeven needs about 1 point. Entries also come late, after the move has extended, so the average win (+49 points) is smaller than the average loss (−77 points)."
+  },
+  {
+    "objectID": "projects/us30-breakout.html#lessons",
+    "href": "projects/us30-breakout.html#lessons",
+    "title": "US30 Intraday Breakout: Research Record",
+    "section": "Lessons",
+    "text": "Lessons\n\nStart from an economic reason, and pre-register the rule with as few parameters as possible.\nTest on two separate periods. A rule that works on only one is noise.\nCost first: the expected gross move per trade should be at least 10× the round-trip cost.\nCheck a result that looks too good before believing it. A “+544 R” variant turned out to be a fill-logic error.\nKeep the simulator and the trading code matched trade for trade before trusting any number.\n\nRead the closing report Repository on GitHub\nThe repository holds the rules, the MQL5 Expert Advisor, a Python reference simulator and the reports. Broker price data, trade logs and tester reports are not published."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mo Heidari",
     "section": "",
-    "text": "Python, Streamlit · Nov 2024 – Present\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
-  },
-  {
-    "objectID": "projects.html#research-us-jobs-data-and-european-carbon-prices",
-    "href": "projects.html#research-us-jobs-data-and-european-carbon-prices",
-    "title": "Projects",
-    "section": "Research: US Jobs Data and European Carbon Prices",
-    "text": "Research: US Jobs Data and European Carbon Prices\nPython, Excel · October 2026\nAn exploratory study of whether US employment and industrial activity help explain changes in EU Allowance (EUA) carbon prices, using monthly data from 2013 to mid-2026. It tests monthly relationships; it does not test immediate reactions to jobs announcements.\nTests of total, manufacturing, and mining and logging employment found no consistent relationship with EUA returns, and employment did not consistently add information beyond industrial production measures. One exploratory pattern linked unusual months in US mining, materials and capacity-use data with EUA returns five months later. It was found after trying many alternatives, received only weak support in an earlier period and showed no reliable forecasting ability, so I treat it as a hypothesis rather than a signal.\nMain limitations: the US data include later revisions, EUA prices are auction prices rather than executable futures prices, and many indicators and time gaps were tried on limited samples. The natural next step is an announcement-day study using market expectations and first-release data.\nSources: ICAP Allowance Price Explorer; US Bureau of Labor Statistics via FRED; Federal Reserve G.17 release; ISM Manufacturing Report on Business."
-  },
-  {
-    "objectID": "projects.html#equity-valuation-exxonmobil-and-hsbc",
-    "href": "projects.html#equity-valuation-exxonmobil-and-hsbc",
-    "title": "Projects",
-    "section": "Equity Valuation: ExxonMobil and HSBC",
-    "text": "Equity Valuation: ExxonMobil and HSBC\nExcel, Bloomberg Terminal · Oct 2024 – Nov 2024\nA full fundamental analysis of two large-cap companies from different sectors, using financial statements, peer data and market pricing sourced through Bloomberg Terminal.\nI built DCF and comparable company models in Excel with clearly stated assumptions and sensitivity testing, factoring in the energy transition for ExxonMobil and the interest rate environment for HSBC. The work concluded with an investment recommendation for each company."
-  },
-  {
-    "objectID": "projects.html#msc-thesis-momentum-in-financial-markets",
-    "href": "projects.html#msc-thesis-momentum-in-financial-markets",
-    "title": "Projects",
-    "section": "MSc Thesis: Momentum in Financial Markets",
-    "text": "MSc Thesis: Momentum in Financial Markets\nPython · MSc Financial Economics, City, University of London · Sep 2024 – Sep 2025\nA study of time-series and cross-sectional momentum across equities, commodities, FX and bonds, tested in Python with regression and hypothesis testing."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m a systematic trader and macro analyst based in London, and I’m looking for trading and finance roles in the UK. Email is the best way to reach me. I’m happy to talk about macro and rates, systematic process, and my research.\n\n\n Email: mo.heidari24@gmail.com\n LinkedIn: linkedin.com/in/mo-heidari1\n GitHub: github.com/Mo-Heidari1\n Location: London, UK"
+    "text": "Mo Heidari\n\n\nSystematic Trader and Macro Analyst · London\n\nI’m Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.\nAbout me See my projects\n\n\n\n\n\nSystematic trading\n\nUS index markets, traded with a rule-based process.\n\n\n\nMacro analysis\n\nFollowing the US economic cycle through Treasury yields, ISM surveys and other macro data.\n\n\n\nPublic macro dashboard\n\nA public dashboard that tracks the US macro picture as new data is released."
   },
   {
     "objectID": "about.html",
@@ -70,10 +77,52 @@
     "text": "Skills & certifications\n\nEquity research: fundamental company and sector analysis, financial statements and peer data, DCF and comparable company valuation, sensitivity testing, earnings monitoring, written investment reports and recommendations\nTrading: systematic strategy design, rule-based execution, backtesting, risk and drawdown control, trade record keeping, US index markets\nMacro and research: US Treasury yield curve, investment-grade and high-yield credit spreads, ISM/PMI, CPI, central bank policy\nProgramming and data: Python (pandas, NumPy, matplotlib, Streamlit), MQL4/MQL5, VBA, MATLAB, STATA, data validation, automated testing\nPlatforms and tools: Bloomberg Terminal, MetaTrader 5, NinjaTrader, Quantower, Excel (advanced modelling, pivot tables, macro-enabled workbooks), Word, PowerPoint\nCertifications: CFA Level 1 Candidate (sitting February 2027), Bloomberg Market Concepts, Bloomberg Spreadsheet Analysis\nLanguages: Persian (native), English (fluent)\n\nA CV tailored to a specific role is available on request."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mo Heidari",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Mo Heidari\n\n\nSystematic Trader and Macro Analyst · London\n\nI’m Mo Heidari, a systematic trader and macro analyst based in London. I trade US index markets with a rule-based process and follow the US economic cycle through Treasury yields, ISM surveys and other macro data. I hold an MSc in Financial Economics (Distinction) from City, University of London.\nAbout me See my projects\n\n\n\n\n\nSystematic trading\n\nUS index markets, traded with a rule-based process.\n\n\n\nMacro analysis\n\nFollowing the US economic cycle through Treasury yields, ISM surveys and other macro data.\n\n\n\nPublic macro dashboard\n\nA public dashboard that tracks the US macro picture as new data is released."
+    "text": "I’m a systematic trader and macro analyst based in London, and I’m looking for trading and finance roles in the UK. Email is the best way to reach me. I’m happy to talk about macro and rates, systematic process, and my research.\n\n\n Email: mo.heidari24@gmail.com\n LinkedIn: linkedin.com/in/mo-heidari1\n GitHub: github.com/Mo-Heidari1\n Location: London, UK"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
+  },
+  {
+    "objectID": "projects.html#macro-dashboard",
+    "href": "projects.html#macro-dashboard",
+    "title": "Projects",
+    "section": "",
+    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
+  },
+  {
+    "objectID": "projects.html#us30-intraday-breakout-research-record",
+    "href": "projects.html#us30-intraday-breakout-research-record",
+    "title": "Projects",
+    "section": "US30 Intraday Breakout: Research Record",
+    "text": "US30 Intraday Breakout: Research Record\nPython, MQL5 · Retired Nov 2026\n\nSystematic trading Pre-registration Out-of-sample testing Python MQL5\n\nResearch record of a Dow Jones intraday breakout system that lost money after costs in both test periods and was retired.\nRead the write-up Repository on GitHub\nResearch only, not investment advice."
+  },
+  {
+    "objectID": "projects.html#research-us-jobs-data-and-european-carbon-prices",
+    "href": "projects.html#research-us-jobs-data-and-european-carbon-prices",
+    "title": "Projects",
+    "section": "Research: US Jobs Data and European Carbon Prices",
+    "text": "Research: US Jobs Data and European Carbon Prices\nPython, Excel · October 2026\n\nUS jobs data EUA carbon prices Exploratory study Python Excel\n\nAn exploratory study of whether US employment and industrial activity help explain changes in EU Allowance (EUA) carbon prices, using monthly data from 2013 to mid-2026. It tests monthly relationships; it does not test immediate reactions to jobs announcements.\nTests of total, manufacturing, and mining and logging employment found no consistent relationship with EUA returns, and employment did not consistently add information beyond industrial production measures. One exploratory pattern linked unusual months in US mining, materials and capacity-use data with EUA returns five months later. It was found after trying many alternatives, received only weak support in an earlier period and showed no reliable forecasting ability, so I treat it as a hypothesis rather than a signal.\nMain limitations: the US data include later revisions, EUA prices are auction prices rather than executable futures prices, and many indicators and time gaps were tried on limited samples. The natural next step is an announcement-day study using market expectations and first-release data.\nSources: ICAP Allowance Price Explorer; US Bureau of Labor Statistics via FRED; Federal Reserve G.17 release; ISM Manufacturing Report on Business."
+  },
+  {
+    "objectID": "projects.html#equity-valuation-exxonmobil-and-hsbc",
+    "href": "projects.html#equity-valuation-exxonmobil-and-hsbc",
+    "title": "Projects",
+    "section": "Equity Valuation: ExxonMobil and HSBC",
+    "text": "Equity Valuation: ExxonMobil and HSBC\nExcel, Bloomberg Terminal · Oct 2024 – Nov 2024\n\nFundamental analysis DCF Comparable companies Excel Bloomberg Terminal\n\nA full fundamental analysis of two large-cap companies from different sectors, using financial statements, peer data and market pricing sourced through Bloomberg Terminal.\nI built DCF and comparable company models in Excel with clearly stated assumptions and sensitivity testing, factoring in the energy transition for ExxonMobil and the interest rate environment for HSBC. The work concluded with an investment recommendation for each company."
+  },
+  {
+    "objectID": "projects.html#msc-thesis-momentum-in-financial-markets",
+    "href": "projects.html#msc-thesis-momentum-in-financial-markets",
+    "title": "Projects",
+    "section": "MSc Thesis: Momentum in Financial Markets",
+    "text": "MSc Thesis: Momentum in Financial Markets\nPython · MSc Financial Economics, City, University of London · Sep 2024 – Sep 2025\n\nTime-series momentum Cross-sectional momentum Regression Hypothesis testing Python\n\nA study of time-series and cross-sectional momentum across equities, commodities, FX and bonds, tested in Python with regression and hypothesis testing."
   }
 ]

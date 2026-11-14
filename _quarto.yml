@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "projects/*.qmd"
     - "!research.qmd"
   resources:
     - CNAME

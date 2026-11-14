@@ -310,6 +310,85 @@ h3 .cv-dates {
   }
 }
 
+// Tag pills on the project cards.
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: -0.25rem 0 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--mh-heading);
+  background: var(--mh-bg);
+  border: 1px solid var(--mh-rule);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+// ---- Single project page -------------------------------------------------
+
+.page-project {
+  #title-block-header .description {
+    max-width: $mh-measure;
+    color: var(--mh-muted);
+  }
+
+  main.content > p:first-of-type em {
+    color: var(--mh-muted);
+  }
+
+  .table-scroll {
+    max-width: 100%;
+    margin: 1rem 0 1.25rem;
+    overflow-x: auto;
+  }
+
+  .table-scroll table {
+    width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    border-top: 2px solid var(--mh-accent);
+  }
+
+  .table-scroll th,
+  .table-scroll td {
+    padding: 0.55rem 0.6rem;
+    vertical-align: top;
+  }
+
+  .table-scroll td:not(:first-child),
+  .table-scroll th:not(:first-child) {
+    white-space: nowrap;
+  }
+}
+
+// On phones the bracketed real-tick figure wraps under the main figure so the
+// table fits without sideways scrolling.
+@media (max-width: 575.98px) {
+  .page-project {
+    .table-scroll table {
+      font-size: 0.88rem;
+    }
+
+    .table-scroll th,
+    .table-scroll td {
+      padding: 0.45rem 0.4rem;
+    }
+
+    .table-scroll td:not(:first-child),
+    .table-scroll th:not(:first-child) {
+      white-space: normal;
+    }
+  }
+}
+
 // ---- Contact -------------------------------------------------------------
 
 .contact-card {

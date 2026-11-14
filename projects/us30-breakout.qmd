@@ -1,0 +1,57 @@
+---
+title: "US30 Intraday Breakout: Research Record"
+description: "A Dow Jones intraday breakout system, tested with pre-registered rules on two independent periods. It lost money after costs and was retired."
+body-classes: page-project
+---
+
+*Python, MQL5 · Retired 14 Nov 2026 · [All projects](../projects.qmd)*
+
+[Research only, not investment advice. AI-assisted analysis.]{.small}
+
+## Result: retired after a clear "no"
+
+The system lost money after costs in both independent test periods, so I retired it. No real money will be traded on it.
+
+That is the job of a research process: to catch a strategy that does not work before capital is at risk. Over 7.4 years of 1-minute data (Jan 2019 – Nov 2026, 1,982 sessions, 7,645 trades), the signal's edge before costs was about 0.01 R per trade, roughly a third of what the spread and slippage cost. No realistic cost structure closes that gap.
+
+## The question and the system
+
+As a systematic trader, I wanted to know whether a simple breakout rule on the Dow Jones (US30) can make money in the first two hours after the New York open.
+
+The system reads 1-minute bars. When a candle of a defined shape closes beyond the two candles before it, on the right side of a moving-average trend filter, it places a stop order to trade in the direction of the break, with a fixed profit target and a stop behind the recent candles. It holds one position at a time, reverses on an opposite signal and closes out at a fixed time each day. The full rules are in the repository.
+
+## How it was tested
+
+- **Pre-registration.** Rules and pass bars were written down before any result was computed.
+- **Two independent periods.** 2019 – May 2023 and Jul 2023 – Nov 2026. The second period stayed untouched until a rule passed development, and a rule had to hold on data not used to build it.
+- **Costs first.** Every result is judged after spread and slippage, about 3 points per trade. To pass, a rule had to be positive after costs, positive in most half-year blocks and significant at p < 0.05.
+- **Search-adjusted statistics.** Day-level bootstrap tests, with p-values adjusted wherever many variants were searched.
+- **Verified code.** The Python simulator matched the MQL5 Expert Advisor trade for trade: 3,612 of 3,612 trades on 2019–22.
+
+## Results
+
+R is profit in units of the 1% risk per trade. Figures in brackets apply the slippage measured in MT5 real-tick tests.
+
+::: {.table-scroll}
+| Version | 2019 – May 2023 | Jul 2023 – Nov 2026 |
+|---|--:|--:|
+| Base system | −60.8 R (−121.6) | −45.5 R (−94.4) |
+| + EMA-cross day rule | −66.1 R (−98.9) | −16.6 R (−41.0) |
+| + EMA rule + 3 wins / 2 losses | −47.2 R (−74.3) | −18.0 R (−37.3) |
+:::
+
+The day rule shows the trap. It looked useful on 2023–26, where the trades it blocked lost 29 R, but on 2019–23 the same rule blocked trades that made 5.3 R. About 260 variants were tested in total, from parameters and day filters to an ML regime model and two pre-registered ideas from the academic literature. All were rejected.
+
+Why it fails, in short: the signal is thin and costs decide the sign. A trade costs about 3 points in spread and slippage, while breakeven needs about 1 point. Entries also come late, after the move has extended, so the average win (+49 points) is smaller than the average loss (−77 points).
+
+## Lessons
+
+- Start from an economic reason, and pre-register the rule with as few parameters as possible.
+- Test on two separate periods. A rule that works on only one is noise.
+- Cost first: the expected gross move per trade should be at least 10× the round-trip cost.
+- Check a result that looks too good before believing it. A "+544 R" variant turned out to be a fill-logic error.
+- Keep the simulator and the trading code matched trade for trade before trusting any number.
+
+[Read the closing report](https://github.com/Mo-Heidari1/us30-breakout-research/blob/main/reports/US30_V21_Closing_Report_14Nov2026.md){.btn .btn-primary} [Repository on GitHub](https://github.com/Mo-Heidari1/us30-breakout-research){.btn .btn-outline-primary}
+
+[The repository holds the rules, the MQL5 Expert Advisor, a Python reference simulator and the reports. Broker price data, trade logs and tester reports are not published.]{.small}
