@@ -88,14 +88,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
+    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve, ISM Manufacturing and ISM Services signals. Further modules covering credit spreads, Fed policy and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
   },
   {
     "objectID": "projects.html#macro-dashboard",
     "href": "projects.html#macro-dashboard",
     "title": "Projects",
     "section": "",
-    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve and ISM Manufacturing signals. Further modules covering credit spreads, ISM Services and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
+    "text": "Python, Streamlit · Nov 2024 – Present\n\nUS macro Yield curve ISM data Python Streamlit\n\nA public dashboard that tracks the US macro picture as new data is released. The live app currently shows the US Treasury yield curve, ISM Manufacturing and ISM Services signals. Further modules covering credit spreads, Fed policy and commodities are in development.\nThe dashboard is a way to read where the US economy sits in the cycle at a glance. It pulls data from FRED, Treasury.gov and ISM releases, is updated on each release, and comes with short written summaries of what the combined picture implies for the economic cycle.\nLive app Source on GitHub"
   },
   {
     "objectID": "projects.html#us30-intraday-breakout-research-record",
