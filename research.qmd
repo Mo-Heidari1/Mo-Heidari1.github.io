@@ -4,8 +4,4 @@ title: "Research"
 
 ## Macro notes
 
-TODO: Add macro notes (for example, short write-ups on the yield curve, ISM data, inflation and central bank policy).
-
 ## Market commentary
-
-TODO: Add market commentary.
